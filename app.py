@@ -20,3 +20,11 @@ class Multiset:
 
     def __len__(self):
         return sum(self.data.values())
+
+    def __str__(self):
+        return str(self.data)
+
+m = Multiset()
+m.add(5)
+print(m.__contains__(3))
+print(m)
